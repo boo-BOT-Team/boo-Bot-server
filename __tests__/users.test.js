@@ -27,4 +27,13 @@ describe('user routes', () => {
       email,
     });
   });
+
+  it('#POST /api/v1/users/session logs in an existing user', async () => {
+    await (await request(app).post('/api/v1/users')).send(booUser);
+    const res = await request(app)
+      .post('/api/v1/users/session')
+      .send({ email: 'booemail@ghost.com', password: 'iamghost' });
+    expect(res.status).toBe(200);
+    expect(res.body.message).toEqual('Sign in successful');
+  });
 });
