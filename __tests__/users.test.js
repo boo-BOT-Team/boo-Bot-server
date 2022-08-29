@@ -28,7 +28,6 @@ describe('user routes', () => {
     });
   });
   
-  
   it('#POST /api/v1/users/session logs in an existing user', async () => {
     await request(app).post('/api/v1/users').send(booUser);
     const res = await request(app)
