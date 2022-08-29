@@ -16,6 +16,7 @@ describe('user routes', () => {
     pool.end();
   });
 
+  //authorized or bust
   it('#POST /api/v1/users should create a new user', async () => {
     const res = await request(app).post('/api/v1/users').send(booUser);
     const { email } = booUser;
@@ -26,7 +27,8 @@ describe('user routes', () => {
       email,
     });
   });
-
+  
+  
   it('#POST /api/v1/users/session logs in an existing user', async () => {
     await request(app).post('/api/v1/users').send(booUser);
     const res = await request(app)
@@ -47,4 +49,11 @@ describe('user routes', () => {
       message: 'Signed out successfully'
     });
   });
+
 });
+//what we want to happen: 
+//admin is able to login and logout 
+//admin is able toCRUD on all other routes !user 
+//!admin users are not able to do anything lol sry!
+//user type ot user table and default to admin
+// we just need authenticated middleware, shut down create user,
