@@ -29,9 +29,9 @@ describe('user routes', () => {
   });
 
   it('#POST /api/v1/users/session logs in an existing user', async () => {
-    await (await request(app).post('/api/v1/users')).send(booUser);
+    await request(app).post('/api/v1/users').send(booUser);
     const res = await request(app)
-      .post('/api/v1/users/session')
+      .post('/api/v1/users/sessions')
       .send({ email: 'booemail@ghost.com', password: 'iamghost' });
     expect(res.status).toBe(200);
     expect(res.body.message).toEqual('Sign in successful');
