@@ -33,7 +33,9 @@ INSERT INTO boo_themes (
 VALUES
 ('Ghost'),
 ('Vampire'),
-('Zombie');
+('Zombie'),
+('General'),
+('Witch');
 
 CREATE TABLE boo_facts (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -65,6 +67,28 @@ INSERT INTO boo_links (
 )
 
 VALUES
-(1, 'https://en.wikipedia.org/wiki/Ghost'),
-(1, 'https://www.youtube.com/watch?v=gh0BD4Ut9Tw'),
-(3, 'https://en.wikipedia.org/wiki/Dawn_of_the_Dead_(2004_film)');
+(4, 'https://en.wikipedia.org/wiki/Stingy_Jack'),
+(2, 'https://open.spotify.com/playlist/1JCGVEyA5C1b0MZDDvIYU4?si=cbb605d6f2fa4fc9'),
+(4, 'https://www.youtube.com/watch?v=l2PoSljk8cE'),
+(4, 'https://www.youtube.com/watch?v=ho9rZjlsyYY&t=3s'),
+(4, 'https://open.spotify.com/playlist/37i9dQZF1EIdTyqrt0mCSD?si=aef86c1b092c4a8d'),
+(2, 'https://www.britannica.com/topic/vampire'),
+(4, 'https://www.history.com/news/halloween-timeline'),
+(1, 'https://www.rd.com/article/ghost-stories/'),
+(5, 'https://open.spotify.com/show/6oB6wBoup2Ev6fAcaJAoYH?si=29fd165f04a34579'), 
+(2, 'https://www.youtube.com/watch?v=c1w1BsbaAiE'),
+(1, 'https://www.youtube.com/watch?v=zfHB3RonBu0'),
+(3, 'https://www.youtube.com/watch?v=W4tVH7BPb-Q'),
+(2, 'https://www.youtube.com/watch?v=Zt__YZWMFYY'),
+(4, 'https://www.youtube.com/watch?v=nNpYPwzBxv4'),
+(4, 'https://www.youtube.com/watch?v=ZVuToMilP0A'),
+(4, 'https://www.youtube.com/watch?v=j4p9WKnDQzQ'),
+(4, 'https://www.youtube.com/watch?v=DiY7foXva7c'),
+(1, 'https://www.youtube.com/watch?v=mXC7DCsrfiI'),
+(4, 'https://www.youtube.com/watch?v=clURHZ5TfCQ'),
+(4, 'https://www.youtube.com/watch?v=vCTXlerK8M0'),
+(4, 'https://www.youtube.com/watch?v=aA37bcLABj8'),
+(5, 'https://www.vice.com/en/article/qvwe3x/the-young-brujas-reclaiming-the-power-of-their-ancestors'),
+(4, 'https://www.youtube.com/watch?v=9CHqhsMP80E&list=RD9CHqhsMP80E&index=1'),
+(1, 'https://www.smithsonianmag.com/blogs/national-museum-american-indian/2021/10/28/native-ghosts-and-the-supernatural/');
+
