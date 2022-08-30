@@ -110,5 +110,13 @@ VALUES
 (4, 'https://www.youtube.com/watch?v=aA37bcLABj8'),
 (5, 'https://www.vice.com/en/article/qvwe3x/the-young-brujas-reclaiming-the-power-of-their-ancestors'),
 (4, 'https://www.youtube.com/watch?v=9CHqhsMP80E&list=RD9CHqhsMP80E&index=1'),
-(1, 'https://www.smithsonianmag.com/blogs/national-museum-american-indian/2021/10/28/native-ghosts-and-the-supernatural/');
+(1, 'https://www.smithsonianmag.com/blogs/national-museum-american-indian/2021/10/28/native-ghosts-and-the-supernatural/'),
+(3, 'https://en.wikipedia.org/wiki/Night_of_the_Living_Dead'),
+(3, 'https://www.youtube.com/watch?v=VlPl2ywcNY4'),
+(3, 'https://www.youtube.com/watch?v=y7voToyTmOE'),
+(2, 'https://www.youtube.com/watch?v=VoaMw91MC9k'),
+(4, 'https://www.youtube.com/watch?v=vOGhAV-84iI'),
+(4, 'https://www.youtube.com/watch?v=ZZ5IWRz78DY'),
+(3, 'https://www.youtube.com/watch?v=vUlBD6DQMFM'),
+(4, 'https://www.youtube.com/watch?v=xQPak0N-1hU');
 
