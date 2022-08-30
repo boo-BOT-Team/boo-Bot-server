@@ -16,7 +16,7 @@ describe('user routes', () => {
     expect(res.status).toBe(200);
     expect(res.body).toEqual({
       id: '1',
-      url: 'https://en.wikipedia.org/wiki/Ghost',
+      url: expect.any(String),
       themeId: expect.any(String),
     });
   });
