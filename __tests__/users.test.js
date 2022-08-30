@@ -3,15 +3,15 @@ const setup = require('../data/setup');
 const request = require('supertest');
 const app = require('../lib/app');
 
-const booUser = {
-  email: 'booemail@ghost.com',
-  password: 'iamghost',
-};
+// const booUser = {
+//   email: 'booemail@ghost.com',
+//   password: 'iamghost',
+// };
 
-const authUser = {
-  email: 'booatthebot@gmail.com',
-  password: 'iamghost',
-};
+// const authUser = {
+//   email: 'booatthebot@gmail.com',
+//   password: 'iamghost',
+// };
 
 describe('user routes', () => {
   beforeEach(() => {
