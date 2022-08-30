@@ -1,17 +1,9 @@
-# Template for Backend Express
+# boo!BOT - server
 
-The Golden Rule:
-🦸 🦸‍♂️ Stop starting and start finishing. 🏁
+boo!BOT (your haunted enCounter) is a VS Code extension that counts down the days lefts until Halloween and gives the user an option to receive spooky facts and links to themed content to get in the spirit.
 
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
+## About Us
 
-## Scripts
-
-| command                | description                                                                         |
-| ---------------------- | ----------------------------------------------------------------------------------- |
-| `npm start`            | starts the app - should only be used in production as changes will not get reloaded |
-| `npm run start:watch`  | runs the app using `nodemon` which watches for changes and reloads the app          |
-| `npm test`             | runs the tests once                                                                 |
-| `npm run test:watch`   | continually watches and runs the tests when files are updated                       |
-| `npm run setup-db`     | sets up the database locally                                                        |
-| `npm run setup-heroku` | sets up the database on heroku                                                      |
+| Contributors                                             | Find Me                                                             |
+| -------------------------------------------------------- | --------------------------------------------------------------------|
+| <a href="https://github.com/Rigby-David">David Rigby</a> | <a href="https://www.linkedin.com/in/david-rigby2022/">LinkedIn<a/> |
