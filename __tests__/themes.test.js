@@ -63,13 +63,5 @@ describe('user routes', () => {
     });
   });
 
-  it('#PUT /api/v1/themes/:id should update a theme', async () => {
-    const agent = request.agent(app);
-    await registerAndLogin(agent, mockUser);
-    const newPost = await agent.post('/api/v1/themes').send(newTheme);
-
-    const res = await agent.put(`/api/v1/themes/${newPost.body.id}`);
-
-  });
 
 });
