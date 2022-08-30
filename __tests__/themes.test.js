@@ -43,7 +43,7 @@ describe('user routes', () => {
     await registerAndLogin(agent, mockUser);
     const newPost = await agent.post('/api/v1/themes').send(newTheme);
 
-    const res = await request(app).get(`/api/v1/themes/${newPost.body.id}`);
+    const res = await agent.get(`/api/v1/themes/${newPost.body.id}`);
 
     expect(res.status).toBe(200);
     expect(res.body).toEqual({
@@ -61,7 +61,14 @@ describe('user routes', () => {
       id: expect.any(String),
       name: 'Mummy'
     });
+  });
 
+  it('#PUT /api/v1/themes/:id should update a theme', async () => {
+    const agent = request.agent(app);
+    await registerAndLogin(agent, mockUser);
+    const newPost = await agent.post('/api/v1/themes').send(newTheme);
+
+    const res = await agent.put(`/api/v1/themes/${newPost.body.id}`);
 
   });
 
