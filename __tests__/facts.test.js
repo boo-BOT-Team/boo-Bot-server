@@ -11,6 +11,18 @@ describe('user routes', () => {
     pool.end();
   });
 
+  it('#GET /api/v1/facts should return all facts', async () => {
+    const res = await request(app).get('/api/v1/facts');
+    expect(res.status).toBe(200);
+    expect(res.body).toEqual(expect.arrayContaining([
+      {
+        id: expect.any(String),
+        content: expect.any(String),
+        themeId: expect.any(String)
+      }
+    ]));
+  });
+
   it('#GET /api/v1/facts/:id should return a fact by id', async () => {
     const res = await request(app).get('/api/v1/facts/1');
     expect(res.status).toBe(200);
