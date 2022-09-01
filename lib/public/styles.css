@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio&family=Archivo&family=Arvo:wght@400;700&family=Bangers&family=BioRhyme&family=Bungee+Inline&family=Chicle&family=Comfortaa:wght@300&family=Creepster&family=Encode+Sans+Semi+Expanded&family=Epilogue&family=Grand+Hotel&family=Great+Vibes&family=Griffy&family=Heebo:wght@900&family=IM+Fell+French+Canon&family=IM+Fell+French+Canon+SC&family=Inconsolata:wght@200&family=Inter&family=Irish+Grover&family=Josefin+Sans&family=Karla&family=Lato&family=Limelight&family=Manrope&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:wght@400;700&family=Neonderthaw&family=Nixie+One&family=Oswald&family=Philosopher:wght@400;700&family=Poiret+One&family=Poppins&family=Press+Start+2P&family=Raleway:wght@100&family=Roboto+Mono:wght@100&family=Rubik+Wet+Paint&family=Rye&family=Silkscreen&family=Slabo+27px&family=Sora:wght@400;700&family=Space+Grotesk&family=Space+Mono&family=Spectral&family=Syne&family=Tenor+Sans&family=Ultra&family=Unica+One&family=VT323&family=Varela+Round&family=Yeseva+One&display=swap');
+
+
+body {
+  color: white;
+  background-color: rgb(10, 10, 10);
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+  font-size: .8rem;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.boo {
+        animation-duration: 2.3s;
+        animation-iteration-count: infinite;
+    }
+
+.bounce {
+        animation-name: bounce;
+        animation-timing-function: linear;
+}
+
+@keyframes bounce {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-7px); }
+        100% { transform: translateY(0); }
+}
+
+h1 {
+  font-family: 'Rubik Wet Paint', cursive;
+  font-size: 4.5rem;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Rubik Wet Paint', cursive;
+  margin-bottom: 40px;
+  letter-spacing: 1.3px;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+table, th, td {
+  border: 6px solid rgb(10, 10, 10);
+  border-collapse: collapse;
+  padding: 10px 7px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.88);
+  color: black;
+}
+
+table {
+  margin: 0 50px 150px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  opacity: .5;
+  font-weight: 1000;
+  border-bottom: 1px solid black;
+  font-size: .8rem;
+}
+
+a:hover {
+  opacity: 1;
+  transition: all 1s ease 0s;
+
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    padding: 7px 20px;
+    font-size: .9rem;
+    display: flex;
+    justify-content: flex-end;
+    letter-spacing: 1px;
+}
