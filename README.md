@@ -1,10 +1,21 @@
-# boo!BOT - extension
+# boo!BOT - server
 
-boo!BOT (your haunted enCounter) is a VS Code extension that counts down the days left until Halloween and gives you an option to receive spooky facts and links fetched from the boo!BOT RESTful API server.
+boo!BOT (your haunted enCounter) is a VS Code extension that counts down the days left until Halloween and gives you an option to receive spooky facts and links fetched from this boo!BOT RESTful API server.
+
+# Endpoints 
+
+GET random fact https://boo-bot-server.herokuapp.com/api/v1/facts/random <br>
+GET random link https://boo-bot-server.herokuapp.com/api/v1/links/random <br>
+<br>
+GET fact by id https://boo-bot-server.herokuapp.com/api/v1/facts/1 <br>
+GET link by id https://boo-bot-server.herokuapp.com/api/v1/links/1 <br>
+<br>
+GET all facts https://boo-bot-server.herokuapp.com/api/v1/facts <br>
+GET all links https://boo-bot-server.herokuapp.com/api/v1/links <br>
 
 ## About Us
 
-| Contributors                                                       | Find Me                                                             |
+| GitHub                                                             | Find Me                                                             |
 | ------------------------------------------------------------------ | --------------------------------------------------------------------|
 | <a href="https://github.com/Rigby-David">David Rigby</a>           | <a href="https://www.linkedin.com/in/david-rigby2022/">LinkedIn<a/> |
 | <a href="https://github.com/kashitamang">Kashi Tamang</a>          | <a href="https://www.linkedin.com/in/kashitamang/">LinkedIn<a/>     |
