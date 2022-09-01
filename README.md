@@ -1,17 +1,25 @@
-# Template for Backend Express
+# boo!BOT - server
 
-The Golden Rule:
-🦸 🦸‍♂️ Stop starting and start finishing. 🏁
+boo!BOT (your haunted enCounter) is a VS Code extension that counts down the days left until Halloween and gives you an option to receive spooky facts and links fetched from this boo!BOT RESTful API server.
 
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
+# Endpoints 
 
-## Scripts
+GET random fact https://boo-bot-server.herokuapp.com/api/v1/facts/random <br>
+GET random link https://boo-bot-server.herokuapp.com/api/v1/links/random <br>
+<br>
+GET fact by id https://boo-bot-server.herokuapp.com/api/v1/facts/1 <br>
+GET link by id https://boo-bot-server.herokuapp.com/api/v1/links/1 <br>
+<br>
+GET all facts https://boo-bot-server.herokuapp.com/api/v1/facts <br>
+GET all links https://boo-bot-server.herokuapp.com/api/v1/links <br>
 
-| command                | description                                                                         |
-| ---------------------- | ----------------------------------------------------------------------------------- |
-| `npm start`            | starts the app - should only be used in production as changes will not get reloaded |
-| `npm run start:watch`  | runs the app using `nodemon` which watches for changes and reloads the app          |
-| `npm test`             | runs the tests once                                                                 |
-| `npm run test:watch`   | continually watches and runs the tests when files are updated                       |
-| `npm run setup-db`     | sets up the database locally                                                        |
-| `npm run setup-heroku` | sets up the database on heroku                                                      |
+## About Us
+
+| GitHub                                                             | Find Me                                                             |
+| ------------------------------------------------------------------ | --------------------------------------------------------------------|
+| <a href="https://github.com/Rigby-David">David Rigby</a>           | <a href="https://www.linkedin.com/in/david-rigby2022/">LinkedIn<a/> |
+| <a href="https://github.com/kashitamang">Kashi Tamang</a>          | <a href="https://www.linkedin.com/in/kashitamang/">LinkedIn<a/>     |
+| <a href="https://github.com/Sebastian-Simek">Sebastian Šimek</a>   | <a href="https://www.linkedin.com/in/sebastian-simek/">LinkedIn<a/> |
+| <a href="https://github.com/kathrynzaro">Kat Zaro</a>              | <a href="https://www.linkedin.com/in/katzaro/">LinkedIn<a/>         |
+
+
