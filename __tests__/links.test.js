@@ -11,6 +11,18 @@ describe('user routes', () => {
     pool.end();
   });
 
+  it('#GET /api/v1/links should return all links', async () => {
+    const res = await request(app).get('/api/v1/links');
+    expect(res.status).toBe(200);
+    expect(res.body).toEqual(expect.arrayContaining([
+      {
+        id: expect.any(String),
+        url: expect.any(String),
+        themeId: expect.any(String)
+      }
+    ]));
+  });
+
   it('#GET /api/v1/links/:id should return a link by id', async () => {
     const res = await request(app).get('/api/v1/links/1');
     expect(res.status).toBe(200);
