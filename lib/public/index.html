@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./booBOT_logo_transparent.png" />
+  <link rel="stylesheet" href="styles.css">
+  <title>boo!BOT</title>
+</head>
+<body>
+  <main>
+    <img class="bounce boo" src="./booBOT_logo_transparent.png" alt="boo!BOT ghost logo" width="230px">
+    <h1>boo!BOT</h1>
+    <h2>your haunted enCounter</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Route</th>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>/api/v1/facts</td>
+        <td>GET</td>
+        <td>Gets a list of spooky facts</td>
+        <td class="link"><a href="/api/v1/facts">Spooky facts</a></td>
+      </tr>
+      <tr>
+        <td>/api/v1/facts/random</td>
+        <td>GET</td>
+        <td>Gets a random spooky fact</td>
+        <td><a href="/api/v1/facts/random">Random Spooky Fact</a></td>
+      </tr>
+      <tr>
+        <td>/api/v1/facts/:id</td>
+        <td>GET</td>
+        <td>Gets one spooky fact</td>
+        <td><a href="/api/v1/facts/1">Spooky Fact 1</a></td>
+      </tr>
+      <tr>
+        <td>/api/v1/links</td>
+        <td>GET</td>
+        <td>Gets a list of spooky links</td>
+        <td class="link"><a href="/api/v1/links">Spooky Links</a></td>
+      </tr>
+      <tr>
+        <td>/api/v1/links/random</td>
+        <td>GET</td>
+        <td>Gets a random link</td>
+        <td><a href="/api/v1/links/random">Random Spooky Link</a></td>
+      </tr>
+      <tr>
+        <td>/api/v1/links/:id</td>
+        <td>GET</td>
+        <td>Gets one link</td>
+        <td><a href="/api/v1/links/1">Spooky Link 1</a></td>
+      </tr>
+  
+    </table>
+  </main>
+  <footer>&copy;2022 boo!BOT</footer>
+</body>
+</html>
