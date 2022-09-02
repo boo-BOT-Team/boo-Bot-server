@@ -6,9 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="./booBOT_logo_transparent.png" />
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <title>boo!BOT</title>
 </head>
-<body>
+<body id="top"></body>
+  <header>
+    <a href="#top"><span class="material-symbols-outlined">
+keyboard_double_arrow_up
+</span></a>
+    <a href="#about"><span class="material-symbols-outlined">
+groups
+</span></a>
+  </header>
   <main>
     <img class="bounce boo" src="./booBOT_logo_transparent.png" alt="boo!BOT ghost logo" width="230px">
     <h1>boo!BOT</h1>
@@ -26,41 +36,74 @@
         <td>/api/v1/facts</td>
         <td>GET</td>
         <td>Gets a list of spooky facts</td>
-        <td class="link"><a href="/api/v1/facts">Spooky facts</a></td>
+        <td class="link"><a href="/api/v1/facts">Facts</a></td>
       </tr>
       <tr>
         <td>/api/v1/facts/random</td>
         <td>GET</td>
         <td>Gets a random spooky fact</td>
-        <td><a href="/api/v1/facts/random">Random Spooky Fact</a></td>
+        <td><a href="/api/v1/facts/random">Random Fact</a></td>
       </tr>
       <tr>
         <td>/api/v1/facts/:id</td>
         <td>GET</td>
         <td>Gets one spooky fact</td>
-        <td><a href="/api/v1/facts/1">Spooky Fact 1</a></td>
+        <td><a href="/api/v1/facts/1">Fact 1</a></td>
       </tr>
       <tr>
         <td>/api/v1/links</td>
         <td>GET</td>
         <td>Gets a list of spooky links</td>
-        <td class="link"><a href="/api/v1/links">Spooky Links</a></td>
+        <td class="link"><a href="/api/v1/links">Links</a></td>
       </tr>
       <tr>
         <td>/api/v1/links/random</td>
         <td>GET</td>
-        <td>Gets a random link</td>
-        <td><a href="/api/v1/links/random">Random Spooky Link</a></td>
+        <td>Gets a random spooky link</td>
+        <td><a href="/api/v1/links/random">Random Link</a></td>
       </tr>
       <tr>
         <td>/api/v1/links/:id</td>
         <td>GET</td>
-        <td>Gets one link</td>
-        <td><a href="/api/v1/links/1">Spooky Link 1</a></td>
+        <td>Gets one spooky link</td>
+        <td><a href="/api/v1/links/1">Link 1</a></td>
       </tr>
   
     </table>
-  </main>
-  <footer>&copy;2022 boo!BOT</footer>
+
+  <h2 class="dev-h2" id="about">The Developers</h2>
+  <section class="developers">
+      <div class="dev-card">
+        <img class="bounce boo" src="./booBOT_logo_transparent.png" alt="boo the ghost icon" width="120px">
+        <h3>David Rigby <br> <span>(he/him)</span></h3>
+        <a href="https://www.linkedin.com/in/david-rigby2022/">LinkedIn</a>
+        <br>
+        <a href="https://github.com/Rigby-David">GitHub</a> 
+      </div>
+      <div class="dev-card">
+        <img class="bounce boo" src="./booBOT_logo_transparent.png" alt="boo the ghost icon" width="120px">
+        <h3>Kashi Tamang <br> <span>(they/them)</span></h3>
+        <a href="https://www.linkedin.com/in/kashitamang/">LinkedIn</a>
+        <br>
+        <a href="https://github.com/kashitamang">GitHub</a> 
+      </div>
+      <div class="dev-card">
+        <img class="bounce boo" src="./booBOT_logo_transparent.png" alt="boo the ghost icon" width="120px">
+        <h3>Kat Zaro <br><span>(she /her)</span></h3>
+        <a href="https://www.linkedin.com/in/katzaro/">LinkedIn</a>
+        <br>
+        <a href="https://github.com/kathrynzaro">GitHub</a> 
+      </div>
+      <div class="dev-card">
+        <img class="bounce boo" src="./booBOT_logo_transparent.png" alt="boo the ghost icon" width="120px">
+        <h3>Sebastian Simek <br> <span>(he/him)</span></h3>
+        <a href="https://www.linkedin.com/in/sebastian-simek/">LinkedIn</a>
+        <br>
+        <a href="https://github.com/Sebastian-Simek">GitHub</a> 
+      </div>
+  </section>
+
+</main>
+<footer>&copy;2022 boo!BOT</footer>
 </body>
 </html>
