@@ -1,20 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio&family=Archivo&family=Arvo:wght@400;700&family=Bangers&family=BioRhyme&family=Bungee+Inline&family=Chicle&family=Comfortaa:wght@300&family=Creepster&family=Encode+Sans+Semi+Expanded&family=Epilogue&family=Grand+Hotel&family=Great+Vibes&family=Griffy&family=Heebo:wght@900&family=IM+Fell+French+Canon&family=IM+Fell+French+Canon+SC&family=Inconsolata:wght@200&family=Inter&family=Irish+Grover&family=Josefin+Sans&family=Karla&family=Lato&family=Limelight&family=Manrope&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:wght@400;700&family=Neonderthaw&family=Nixie+One&family=Oswald&family=Philosopher:wght@400;700&family=Poiret+One&family=Poppins&family=Press+Start+2P&family=Raleway:wght@100&family=Roboto+Mono:wght@100&family=Rubik+Wet+Paint&family=Rye&family=Silkscreen&family=Slabo+27px&family=Sora:wght@400;700&family=Space+Grotesk&family=Space+Mono&family=Spectral&family=Syne&family=Tenor+Sans&family=Ultra&family=Unica+One&family=VT323&family=Varela+Round&family=Yeseva+One&display=swap');
 
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   color: white;
   background-color: rgb(10, 10, 10);
   font-family: 'Karla', sans-serif;
   text-align: center;
   font-size: .8rem;
-
+  margin: 0;
 }
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 8px 25px;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: .7px;
+  background-color: rgb(13, 23, 23);
+  margin: 0;
+}
+
+header a {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  border: none;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 48
+}
+
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+  height: 100%;
+  margin-bottom: 150px;
+}
+
+img {
+  margin: 25px;
 }
 
 .boo {
@@ -35,14 +74,14 @@ main {
 
 h1 {
   font-family: 'Rubik Wet Paint', cursive;
-  font-size: 4.5rem;
+  font-size: 4.3rem;
   letter-spacing: 5px;
-  margin: 0;
+  margin: 0 0 10px;
 }
 
 h2 {
   font-family: 'Rubik Wet Paint', cursive;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   letter-spacing: 1.3px;
   font-size: 1.5rem;
   font-weight: 100;
@@ -51,14 +90,18 @@ h2 {
 table, th, td {
   border: 6px solid rgb(10, 10, 10);
   border-collapse: collapse;
-  padding: 10px 7px;
+  padding: 10px 6px;
   text-align: left;
   background-color: rgba(255, 255, 255, 0.88);
   color: black;
 }
 
+td, th {
+  font-size: .8rem;
+}
+
 table {
-  margin: 0 50px 150px;
+  margin: 40px 50px 150px;
 }
 
 a {
@@ -73,15 +116,64 @@ a {
 a:hover {
   opacity: 1;
   transition: all 1s ease 0s;
+}
 
+.developers {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  margin: 0 50px 90px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.developers img {
+  margin: 10px 0;
+}
+
+.dev-h2 {
+  font-family: 'Creepster', cursive;
+  font-size: 3rem;
+  margin: 75px 0 15px;
+  letter-spacing: 5px;
+}
+
+.developers h3 {
+  line-height: 25px;
+  font-size: 1.1rem;
+  margin: 15px 0 25px;
+}
+
+span {
+  font-size: .9rem;
+}
+
+.developers a {
+  color: white;
+  font-size: .9rem;
+  border-bottom: 1px solid white;
+  margin: 5px;
+  width: fit-content;
+}
+
+.dev-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8px;
+  padding: 20px 0;
 }
 
 footer {
     position: sticky;
     bottom: 0;
-    padding: 7px 20px;
-    font-size: .9rem;
+    left: 0;
+    padding: 9px 15px;
+    font-size: .8rem;
     display: flex;
     justify-content: flex-end;
-    letter-spacing: 1px;
+    letter-spacing: .7px;
+    background-color: rgb(13, 23, 23);
+    margin: 0;
+    color: rgba(255, 255, 255, 0.79);
 }
