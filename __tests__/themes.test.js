@@ -25,12 +25,7 @@ describe('user routes', () => {
   });
 
   it('#GET /api/v1/themes/:id should get a theme by id', async () => {
-
-
     const res = await request(app).get('/api/v1/themes/1');
-
-   
-
     expect(res.status).toBe(200);
     expect(res.body).toEqual({
       id: expect.any(String),
